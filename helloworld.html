@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+    <!-- Corrected ReactDOM URL -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        function clicked() {
+            console.log("Clicked");
+            document.getElementById("helloWorld").innerHTML = "Hello World Changed";
+        }
+    </script>
+
+    
+</head>
+<body>
+    
+    <div id="helloWorld"></div>
+    <button onclick="clicked()">Click To Change</button>
+    <script>
+        const root = ReactDOM.createRoot(document.getElementById('helloWorld'));
+        const element = React.createElement('p',null,'Hello World from React!');
+        root.render(element);
+    </script>
+
+</body>
+</html>
