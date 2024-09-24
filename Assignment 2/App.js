@@ -1,4 +1,3 @@
-
 const heading = React.createElement('h1', {id:'title', hello: 'world'}, 'Heading 1');
 
 const heading1 = React.createElement('h2', {id:'title2'}, 'Heading 2');
