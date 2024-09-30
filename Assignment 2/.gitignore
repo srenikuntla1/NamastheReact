@@ -40,3 +40,6 @@ Thumbs.db
 *.bak
 *.orig
 *.patch
+
+# Parcel cache
+.parcel-cache
